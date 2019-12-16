@@ -1,26 +1,30 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import * as Sentry from '@sentry/browser';
 
+import AppRoutes from './AppRoutes.js';
 import "assets/scss/material-kit-react.scss?v=1.8.0";
 
-// pages for this product
-import Components from "views/Components/Components.js";
-import LandingPage from "views/LandingPage/LandingPage.js";
-import ProfilePage from "views/ProfilePage/ProfilePage.js";
-import LoginPage from "views/LoginPage/LoginPage.js";
+if (process.env.NODE_ENV === 'production') {
+  Sentry.init({ dsn: 'https://af4cf60f9d3a44b889b90d21858c6f7f@sentry.io/1764560' });
+}
 
-var hist = createBrowserHistory();
+const render = (Component) => {
+  ReactDOM.render(
+    <React.Fragment>
+      <CssBaseline />
+      <Component />
+    </React.Fragment>,
+    document.getElementById('root')
+  );
+};
 
-ReactDOM.render(
-  <Router history={hist}>
-    <Switch>
-      <Route path="/landing-page" component={LandingPage} />
-      <Route path="/profile-page" component={ProfilePage} />
-      <Route path="/login-page" component={LoginPage} />
-      <Route path="/" component={Components} />
-    </Switch>
-  </Router>,
-  document.getElementById("root")
-);
+render(AppRoutes);
+
+if (module.hot) {
+  module.hot.accept('./AppRoutes', () => {
+    const App = require('./AppRoutes').default; // eslint-disable-line
+    render(App);
+  });
+}
