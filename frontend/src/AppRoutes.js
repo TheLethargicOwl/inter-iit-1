@@ -8,14 +8,14 @@ import theme from './colors/index';
 import Loading from './boilerplates/Loading';
 
 const AsyncHome = Loadable({
-  loader: () => import('./views/Components/Components.js'),
-  modules: ['./views/Components/Components.js'],
+  loader: () => import('./containers/Home/index.js'),
+  modules: ['./containers/Home/index.js'],
   loading: Loading,
 });
 
 const AsyncLogin = Loadable({
-  loader: () => import('./views/LoginPage/LoginPage.js'),
-  modules: ['./views/LoginPage/LoginPage.js'],
+  loader: () => import('./containers/Auth/index.js'),
+  modules: ['./containers/Auth/index.js'],
   loading: Loading,
 });
 

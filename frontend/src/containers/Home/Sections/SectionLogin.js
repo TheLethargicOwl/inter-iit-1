@@ -7,14 +7,14 @@ import Icon from "@material-ui/core/Icon";
 import People from "@material-ui/icons/People";
 import Email from "@material-ui/icons/Email";
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
-import Button from "components/CustomButtons/Button.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
+import GridContainer from "../../Auth/node_modules/components/Grid/GridContainer.js.js";
+import GridItem from "../../Auth/node_modules/components/Grid/GridItem.js.js";
+import Card from "../../Auth/node_modules/components/Card/Card.js.js";
+import CardHeader from "../../Auth/node_modules/components/Card/CardHeader.js.js";
+import CardBody from "../../Auth/node_modules/components/Card/CardBody.js.js";
+import CardFooter from "../../Auth/node_modules/components/Card/CardFooter.js.js";
+import Button from "../../Auth/node_modules/components/CustomButtons/Button.js.js";
+import CustomInput from "../../Auth/node_modules/components/CustomInput/CustomInput.js.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/loginStyle.js";
 
