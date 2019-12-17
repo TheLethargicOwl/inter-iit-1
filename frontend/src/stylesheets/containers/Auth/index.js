@@ -1,8 +1,22 @@
-import { container } from "assets/jss/material-kit-react.js";
-
-const signupPageStyle = {
+const styles = {
   container: {
-    ...container,
+    paddingRight: "15px",
+    paddingLeft: "15px",
+    marginRight: "auto",
+    marginLeft: "auto",
+    width: "100%",
+    "@media (min-width: 576px)": {
+      maxWidth: "540px"
+    },
+    "@media (min-width: 768px)": {
+      maxWidth: "720px"
+    },
+    "@media (min-width: 992px)": {
+      maxWidth: "960px"
+    },
+    "@media (min-width: 1200px)": {
+      maxWidth: "1140px"
+    },
     zIndex: "2",
     position: "relative",
     paddingTop: "20vh",
@@ -13,11 +27,8 @@ const signupPageStyle = {
     opacity: "0",
     transform: "translate3d(0, -60px, 0)"
   },
-  pageHeader: {
-    minHeight: "100vh",
-    height: "auto",
-    display: "inherit",
-    position: "relative",
+  parent: {
+    height: "100vh",
     margin: "0",
     padding: "0",
     border: "0",
@@ -88,4 +99,4 @@ const signupPageStyle = {
   }
 };
 
-export default signupPageStyle;
+export default styles;

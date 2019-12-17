@@ -6,8 +6,8 @@ import Icon from "@material-ui/core/Icon";
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 
-import Header from "../Header/Header.js";
-import HeaderLinks from "../Header/HeaderLinks.js";
+import Header from "../Header/index.js";
+import HeaderLinks from "../Header/Links.js";
 import Footer from "../Footer/index.js";
 import GridContainer from "../Grid/GridContainer.js";
 import GridItem from "../Grid/GridItem.js";
@@ -18,14 +18,12 @@ import CardBody from "../Card/CardBody.js";
 import CardHeader from "../Card/CardHeader.js";
 import CardFooter from "../Card/CardFooter.js";
 
-
-import styles from "assets/jss/material-kit-react/views/loginPage.js";
-
+import styles from "../../stylesheets/containers/Auth/index.js";
 import image from "../../static/bg7.jpg";
 
 const useStyles = makeStyles(styles);
 
-export default function LoginPage(props) {
+export default function Auth(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
   setTimeout(function() {
     setCardAnimation("");
@@ -33,22 +31,20 @@ export default function LoginPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <div>
-      <Header
-        absolute
-        color="transparent"
-        brand="Material Kit React"
-        rightLinks={<HeaderLinks />}
-        {...rest}
-      />
-      <div
-        className={classes.pageHeader}
+    <div
+      className={classes.parent}
         style={{
           backgroundImage: "url(" + image + ")",
           backgroundSize: "cover",
-          backgroundPosition: "top center"
         }}
-      >
+    >
+      <Header
+        brand="React-Site-Builder"
+        rightLinks={<HeaderLinks />}
+        absolute
+        color="transparent"
+        {...rest}
+      />
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={4}>
@@ -148,7 +144,6 @@ export default function LoginPage(props) {
           </GridContainer>
         </div>
         <Footer whiteFont />
-      </div>
     </div>
   );
 }
