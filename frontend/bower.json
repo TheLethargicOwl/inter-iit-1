@@ -1,10 +1,10 @@
 {
-  "name": "material-kit-react",
-  "homepage": "https://github.com/creativetimofficial/material-kit-react",
+  "name": "react-site-builder",
+  "homepage": "https://github.com/ridhishjain/react-site-builder",
   "authors": [
-    "creative-tim"
+    "Ridhish Jain"
   ],
-  "description": "A Badass Material-UI Kit based on Material Design",
+  "description": "A Basic React Site Layout, editable to crreate new websites",
   "main": "dist/index.js",
   "keywords": [
     "material",
@@ -13,7 +13,6 @@
     "google",
     "twitter"
   ],
-  "license": "Creative TIM License",
   "ignore": [
     "**/.*",
     "node_modules",

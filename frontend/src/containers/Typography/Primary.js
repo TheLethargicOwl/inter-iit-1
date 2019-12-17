@@ -1,3 +1,7 @@
+import React from "react";
+import PropTypes from "prop-types";
+import { makeStyles } from "@material-ui/core/styles";
+
 import {
   defaultFont,
   primaryColor,
@@ -5,9 +9,9 @@ import {
   successColor,
   warningColor,
   dangerColor
-} from "assets/jss/material-kit-react.js";
+} from "../../colors/style.js";
 
-const typographyStyle = {
+const styles = {
   defaultFontStyle: {
     ...defaultFont,
     fontSize: "14px"
@@ -58,4 +62,18 @@ const typographyStyle = {
   }
 };
 
-export default typographyStyle;
+const useStyles = makeStyles(styles);
+
+export default function Primary(props) {
+  const classes = useStyles();
+  const { children } = props;
+  return (
+    <div className={classes.defaultFontStyle + " " + classes.primaryText}>
+      {children}
+    </div>
+  );
+}
+
+Primary.propTypes = {
+  children: PropTypes.node
+};

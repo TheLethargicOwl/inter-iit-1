@@ -1,7 +1,7 @@
 {
-  "name": "material-kit-react",
-  "version": "1.8.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "name": "react-site-builder",
+  "version": "0.0.0",
+  "description": "React Site builder Coded by Ridhish Jain",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {
