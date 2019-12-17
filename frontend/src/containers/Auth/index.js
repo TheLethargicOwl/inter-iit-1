@@ -1,27 +1,27 @@
 import React from "react";
-// @material-ui/core components
+
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Icon from "@material-ui/core/Icon";
-// @material-ui/icons
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
-// core components
+
 import Header from "../Header/Header.js";
 import HeaderLinks from "../Header/HeaderLinks.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardFooter from "components/Card/CardFooter.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
+import Footer from "../Footer/index.js";
+import GridContainer from "../Grid/GridContainer.js";
+import GridItem from "../Grid/GridItem.js";
+import Button from "../CustomButtons/index.js";
+import CustomInput from "../CustomInput/index.js"
+import Card from "../Card/Card.js";
+import CardBody from "../Card/CardBody.js";
+import CardHeader from "../Card/CardHeader.js";
+import CardFooter from "../Card/CardFooter.js";
+
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
-import image from "assets/img/bg7.jpg";
+import image from "../../static/bg7.jpg";
 
 const useStyles = makeStyles(styles);
 

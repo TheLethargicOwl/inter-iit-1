@@ -7,11 +7,11 @@ import Face from "@material-ui/icons/Face";
 import Chat from "@material-ui/icons/Chat";
 import Build from "@material-ui/icons/Build";
 // core components
-import GridContainer from "../../Auth/node_modules/components/Grid/GridContainer.js.js.js";
-import GridItem from "../../Auth/node_modules/components/Grid/GridItem.js.js.js";
-import CustomTabs from "./node_modules/components/CustomTabs/CustomTabs.js.js";
+import GridContainer from "../../Auth/node_modules/components/Grid/GridContainer.js.js";
+import GridItem from "../../Auth/node_modules/components/Grid/GridItem.js.js";
+import CustomTabs from "../../Sections/node_modules/components/CustomTabs/CustomTabs.js.js";
 
-import styles from "./node_modules/assets/jss/material-kit-react/views/componentsSections/tabsStyle.js.js";
+import styles from "../../Sections/node_modules/assets/jss/material-kit-react/views/componentsSections/tabsStyle.js.js";
 
 const useStyles = makeStyles(styles);
 

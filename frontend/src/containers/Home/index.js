@@ -5,11 +5,12 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Header from "../Header/Header.js";
 import HeaderLinks from "../Header/HeaderLinks.js";
-import Footer from "../../components/Footer/Footer.js";
-import GridContainer from "../../components/Grid/GridContainer.js";
-import GridItem from "../../components/Grid/GridItem.js";
-import Button from "../../components/CustomButtons/Button.js";
-import Parallax from "../../components/Parallax/Parallax.js";
+import Parallax from "../Parallax/index.js";
+import GridContainer from "../Grid/GridContainer.js";
+import GridItem from "../Grid/GridItem.js";
+import Footer from "../Footer/index.js";
+import Button from "../CustomButtons/index.js";
+
 
 const styles = {
   container: {
@@ -82,7 +83,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}>
+      <Parallax image={require("../../static/bg4.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>

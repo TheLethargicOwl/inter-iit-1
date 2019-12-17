@@ -8,8 +8,8 @@ import Tooltip from "@material-ui/core/Tooltip";
 
 import { Apps, CloudDownload } from "@material-ui/icons";
 
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
-import Button from "components/CustomButtons/Button.js";
+import CustomDropdown from "../CustomDropdown/index.js";
+import Button from "../CustomButtons/index.js";
 
 import { defaultFont, tooltipsStyle } from "../../colors/style.js";
 const styles = theme => ({
