@@ -13,7 +13,7 @@ import GridContainer from "../Grid/GridContainer.js";
 import GridItem from "../Grid/GridItem.js";
 import Button from "../CustomButtons/index.js";
 import CustomInput from "../CustomInput/index.js"
-import Card from "../Card/Card.js";
+import Card from "../Card/index.js";
 import CardBody from "../Card/CardBody.js";
 import CardHeader from "../Card/CardHeader.js";
 import CardFooter from "../Card/CardFooter.js";

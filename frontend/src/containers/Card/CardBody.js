@@ -3,12 +3,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 
-const styles = {
-  cardBody: {
-    padding: "0.9375rem 1.875rem",
-    flex: "1 1 auto"
-  }
-};
+import styles from "../../stylesheets/containers/Card/CardBody.js";
 
 const useStyles = makeStyles(styles);
 

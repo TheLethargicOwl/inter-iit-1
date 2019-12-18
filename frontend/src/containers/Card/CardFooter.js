@@ -3,14 +3,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 
-const styles = {
-  cardFooter: {
-    display: "flex",
-    alignItems: "center",
-    backgroundColor: "transparent",
-    padding: "0.9375rem 1.875rem"
-  }
-};
+import styles from "../../stylesheets/containers/Card/CardFooter.js";
 
 const useStyles = makeStyles(styles);
 

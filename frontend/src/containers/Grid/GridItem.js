@@ -4,16 +4,7 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 
-const styles = {
-  grid: {
-    position: "relative",
-    width: "100%",
-    minHeight: "1px",
-    paddingRight: "15px",
-    paddingLeft: "15px",
-    flexBasis: "auto"
-  }
-};
+import styles from "../../stylesheets/containers/Grid/GridItem.js";
 
 const useStyles = makeStyles(styles);
 
