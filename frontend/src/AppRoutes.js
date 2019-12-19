@@ -13,9 +13,15 @@ const AsyncHome = Loadable({
   loading: Loading,
 });
 
-const AsyncLogin = Loadable({
+const AsyncAuth = Loadable({
   loader: () => import('./containers/Auth/index.js'),
   modules: ['./containers/Auth/index.js'],
+  loading: Loading,
+});
+
+const AsyncRandom = Loadable({
+  loader: () => import('./containers/Random/index.js'),
+  modules: ['./containers/Random/index.js'],
   loading: Loading,
 });
 
@@ -27,7 +33,8 @@ class AppRoutes extends Component {
             <BrowserRouter>
               <Switch>
                 <Route exact path="/" component={AsyncHome} />
-                <Route path="/auth" component={AsyncLogin} />
+                <Route path="/auth" component={AsyncAuth} />
+                <Route path="/random" component={AsyncRandom} />
               </Switch>
             </BrowserRouter>
         </AppContainer>

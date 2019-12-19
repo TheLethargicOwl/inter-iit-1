@@ -12,7 +12,7 @@ import Parallax from "../Parallax/index.js";
 
 import styles from "../../stylesheets/containers/Random/index.js";
 
-import ProductSection from ".Product.js";
+import ProductSection from "./Product.js";
 import TeamSection from "./Team.js";
 import WorkSection from "./Work.js";
 
@@ -37,7 +37,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/landing-bg.jpg")}>
+      <Parallax filter image={require("../../static/landing-bg.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
