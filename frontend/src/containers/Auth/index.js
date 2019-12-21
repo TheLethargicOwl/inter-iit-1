@@ -8,7 +8,6 @@ import People from "@material-ui/icons/People";
 
 import Header from "../Header/index.js";
 import HeaderLinks from "../Header/Links.js";
-import Footer from "../Footer/index.js";
 import GridContainer from "../Grid/GridContainer.js";
 import GridItem from "../Grid/GridItem.js";
 import Button from "../CustomButtons/index.js";
@@ -135,7 +134,6 @@ export default function Auth(props) {
             </GridItem>
           </GridContainer>
         </div>
-        <Footer whiteFont />
     </div>
   );
 }

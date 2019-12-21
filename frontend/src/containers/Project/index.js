@@ -9,7 +9,6 @@ import HeaderLinks from "../Header/Links.js";
 import Parallax from "../Parallax/index.js";
 import GridContainer from "../Grid/GridContainer.js";
 import GridItem from "../Grid/GridItem.js";
-import Footer from "../Footer/index.js";
 import Button from "../CustomButtons/index.js";
 
 import styles from "../../stylesheets/containers/Home/index.js";
