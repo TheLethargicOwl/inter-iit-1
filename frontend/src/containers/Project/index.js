@@ -23,15 +23,17 @@ const useStyles = makeStyles(styles);
 const download = async () => {
   const mainContainer = document.getElementById("data1");
   console.log(mainContainer.innerHTML);
-  const projects = await database.ref('Progress').once('value').then(function (snapshot) {
+  const projects = await database.ref('Contract').once('value').then(function (snapshot) {
     const data = snapshot.val();
     Object.keys(data).map(function (key, index) {
       console.log(data[key]);
       mainContainer.innerHTML += `
       <div>
-        <h4> Description: ${data[key].description} </h3>
-        <h4> Stage: ${data[key].stage} </h4>
-        <img src=${data[key].url} alt="error loading image"/>
+        <h4> Assigned To: ${data[key].assigned_to} </h3>
+        <h4> Name: ${data[key].name} </h4>
+        <h4> Phase: ${data[key].phase} </h4>
+        <h4> Target: ${data[key].target} </h4>
+        <h4> Budget: ${data[key].budget} </h4>
         <br /> <br />
       </div>
       `
@@ -78,9 +80,9 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-          <div>
-              <div id="data1" style={{padding: "50px"}}></div>
-          </div>
+        <div>
+          <div id="data1" style={{ padding: "50px" }}></div>
+        </div>
       </div>
     </div>
   );

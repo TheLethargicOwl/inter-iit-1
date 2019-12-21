@@ -12,7 +12,7 @@ import Footer from "../Footer/index.js";
 import GridContainer from "../Grid/GridContainer.js";
 import GridItem from "../Grid/GridItem.js";
 import Button from "../CustomButtons/index.js";
-import CustomInput from "../CustomInput/index.js"
+import CustomInput from "../CustomInput/index.js";
 import Card from "../Card/index.js";
 import CardBody from "../Card/CardBody.js";
 import CardHeader from "../Card/CardHeader.js";
@@ -20,8 +20,14 @@ import CardFooter from "../Card/CardFooter.js";
 
 import styles from "../../stylesheets/containers/Auth/index.js";
 import image from "../../static/bg7.jpg";
+import firebase from "../../firebase.js";
 
 const useStyles = makeStyles(styles);
+
+const login = () => {
+  const username = document.getElementById("username");
+  const password = document.getElementById("password");
+}
 
 export default function Auth(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
@@ -30,6 +36,7 @@ export default function Auth(props) {
   }, 700);
   const classes = useStyles();
   const { ...rest } = props;
+
   return (
     <div
       className={classes.parent}
@@ -85,8 +92,8 @@ export default function Auth(props) {
                   <p className={classes.divider}>Or Be Classical</p>
                   <CardBody>
                     <CustomInput
-                      labelText="First Name..."
-                      id="first"
+                      labelText="username"
+                      id="username"
                       formControlProps={{
                         fullWidth: true
                       }}
@@ -100,23 +107,8 @@ export default function Auth(props) {
                       }}
                     />
                     <CustomInput
-                      labelText="Email..."
-                      id="email"
-                      formControlProps={{
-                        fullWidth: true
-                      }}
-                      inputProps={{
-                        type: "email",
-                        endAdornment: (
-                          <InputAdornment position="end">
-                            <Email className={classes.inputIconsColor} />
-                          </InputAdornment>
-                        )
-                      }}
-                    />
-                    <CustomInput
                       labelText="Password"
-                      id="pass"
+                      id="password"
                       formControlProps={{
                         fullWidth: true
                       }}
