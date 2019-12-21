@@ -38,6 +38,9 @@ export default function HeaderLinks(props) {
             <a href="/assigned" className={classes.dropdownLink}>
               Assigned Tasks
             </a>,
+            <a href="/maintain" className={classes.dropdownLink}>
+              Issues
+            </a>,
           ]}
         />
       </ListItem>
